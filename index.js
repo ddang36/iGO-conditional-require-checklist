@@ -37,7 +37,7 @@ async function action() {
   
   for (let body of bodyList) {
     var matches = [...body.matchAll(TASK_LIST_ITEM)];
-	var screenActionMatch = [..body.matchAll(SCREEN_TASK_LIST_CHANGE_ACTION_ITEM);
+	var screenActionMatch = [..body.matchAll(SCREEN_TASK_LIST_CHANGE_ACTION_ITEM)];
     for (let item of matches) {
       var is_complete = item[1] != " ";
       var item_text = item[2];
