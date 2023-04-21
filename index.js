@@ -1,8 +1,8 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 
-const TASK_LIST_ITEM_CHANGE_TYPE = /Screen Change|PDF|103 XSL Update|Config|Performance|VB Custom Assembly|JS Custom Assembly/g;
-const SCREEN_TASK_LIST_CHANGE_ACTION_ITEM = /Screen Status Validation|Object Properties Validation|Screen and Object Trigger/g;
+const TASK_LIST_ITEM_CHANGE_TYPE = /\bScreen Change|PDF|103 XSL Update|Config|Performance|VB Custom Assembly|JS Custom Assembly\b/g;
+const SCREEN_TASK_LIST_CHANGE_ACTION_ITEM = /\bScreen Status Validation|Object Properties Validation|Screen and Object Trigger\b/g;
 
 async function action() {
   const bodyList = [];
